@@ -2,7 +2,7 @@
 #define DEF_MISC_H
 
 #define SHOW_BITS(a) ({ \
-    printf("Variable `%s`: ", #a);\
+    printf("Memory content of `%s`: ", #a);\
     show_bits(&a, sizeof(a));\
 })
 
