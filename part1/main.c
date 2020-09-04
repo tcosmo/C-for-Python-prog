@@ -4,5 +4,6 @@
 
 int main() {
     
-    unsigned char uchar_var = 3;
+    char char_var = 'a'+1;
+    printf("%c %hhi\n", char_var, char_var);
 }
