@@ -8,14 +8,16 @@
 
 void show_uchar(unsigned char a)
 {
-    for(int i = 7; i >= 0; i-= 1) 
+    int i;
+    for(i = 7; i >= 0; i-= 1) 
         printf("%d", ((a >> i) & 1));
 }
 
 void show_bits(void* a, size_t s)
 {
     unsigned char* p = (unsigned char*) a;
-    for(int i = (int)s-1; i >= 0 ; i -= 1) {
+    int i;
+    for(i = (int)s-1; i >= 0 ; i -= 1) {
         show_uchar(p[i]);
         printf(" ");
     }
